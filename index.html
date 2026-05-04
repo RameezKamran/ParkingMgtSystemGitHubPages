@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkingMS | System Documentation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-square-p"></i>
+                <span>Parking<strong>MS</strong></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#overview" class="active"><i class="fas fa-book"></i> Overview</a></li>
+                    <li><a href="#core-features"><i class="fas fa-cogs"></i> Core Features</a></li>
+                    <li><a href="#database"><i class="fas fa-database"></i> Data Architecture</a></li>
+                    <li><a href="#analytics"><i class="fas fa-chart-line"></i> Analytics & BI</a></li>
+                    <li><a href="#stakeholders"><i class="fas fa-users"></i> Stakeholders</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <header class="main-header">
+                <h1>Documentation</h1>
+                <p>System context and operational architecture for the Parking Management System.</p>
+            </header>
+
+            <section id="overview" class="section">
+                <div class="card header-card">
+                    <h2>Context & Problem Statement</h2>
+                    <p>Urban areas face a critical shortage of parking efficiency due to increasing vehicle density. Traditional manual systems lead to unorganized slot allocation, congestion, and a complete lack of data-driven insights.</p>
+                    <div class="stats-row">
+                        <div class="stat"><span class="label">Primary Goal</span><span class="value">Automation</span></div>
+                        <div class="stat"><span class="label">Target</span><span class="value">Urban Traffic</span></div>
+                        <div class="stat"><span class="label">Tech Stack</span><span class="value">SQL / Python</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="core-features" class="section">
+                <h3>Core Operations</h3>
+                <div class="grid">
+                    <div class="card">
+                        <i class="fas fa-clock icon"></i>
+                        <h4>Lifecycle Management</h4>
+                        <p>Automated control of entry/exit with precise timestamps for active parking sessions.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-random icon"></i>
+                        <h4>Dynamic Allocation</h4>
+                        <p>Real-time assignment of available slots to minimize driver search time and congestion.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-calculator icon"></i>
+                        <h4>Automated Billing</h4>
+                        <p>Charge calculation based on duration, reducing human error and increasing transparency.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="database" class="section">
+                <div class="card db-card">
+                    <h3>Relational Database Logic</h3>
+                    <p>All operations are anchored in a structured relational database. Every entry or exit triggers an immediate atomic update to ensure consistency.</p>
+                    <ul class="feature-list">
+                        <li>Real-time slot availability tracking</li>
+                        <li>Structured record-keeping for audit trails</li>
+                        <li>Reduced human dependency in data entry</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="analytics" class="section">
+                <h3>Data Analysis & Visualization</h3>
+                <div class="analysis-box">
+                    <div class="tech-tag">Powered by Pandas & Plotly</div>
+                    <p>The system transforms raw operational data into actionable intelligence through interactive visualizations.</p>
+                    <div class="viz-grid">
+                        <div class="viz-item"><i class="fas fa-chart-area"></i> Peak Hour Traffic</div>
+                        <div class="viz-item"><i class="fas fa-chart-pie"></i> Slot Utilization</div>
+                        <div class="viz-item"><i class="fas fa-dollar-sign"></i> Revenue Trends</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="stakeholders" class="section">
+                <h3>Stakeholder Matrix</h3>
+                <div class="grid">
+                    <div class="card stakeholder">
+                        <h5>Drivers</h5>
+                        <p>Benefit from faster, organized entry and predictable services.</p>
+                    </div>
+                    <div class="card stakeholder">
+                        <h5>Administrators</h5>
+                        <p>Monitor system activity and manage resources efficiently.</p>
+                    </div>
+                    <div class="card stakeholder">
+                        <h5>Authorities</h5>
+                        <p>Use long-term data for municipal infrastructure planning.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
